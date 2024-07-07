@@ -2,7 +2,6 @@ from pytube import YouTube
 import cv2
 import os
 from PIL import Image
-import binascii
 
 
 def clear(folder_path):
@@ -97,14 +96,6 @@ def quaternify(hex_data):
     return quaternary_data
 
 
-def file_to_hex(path):
-    with open(path, 'rb') as f:
-        data = f.read()
-    hex_data = binascii.hexlify(data).decode('utf-8')
-    return hex_data
-
-
-real_data = file_to_hex('duotrigordle.png')
 video_id = input('ID of the video: ')
 output_path = input('Output path: ')
 download_video(video_id, 'youtube_video.mp4', '2160p')
