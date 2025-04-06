@@ -1,0 +1,1 @@
+This is an encoder and decoder to convert any file format to a .wav file. Technically this could be uploaded to services like Spotify and Soundcloud. Spotify doesn't allow users to directly upload music, though, and Soundcloud is severely limited in the amount of storage you get (120 minutes ~ 600mb). This is really just something that can theoretically be done.
